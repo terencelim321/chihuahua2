@@ -2,9 +2,6 @@ from flask import Flask, render_template, request
 
 import json
 
-
-        
-
 #declare app
 app = Flask(__name__)
 
