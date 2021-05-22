@@ -19,7 +19,7 @@ app = Flask(__name__)
 @app.route("/")
 #declare function
 def main():
-    	    return x + y
+    	    return (x + y)
 
 if __name__ == '__main__':
     app.run(port=5000, debug=True)
