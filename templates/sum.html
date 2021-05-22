@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Calculator App</title>
+
+    <!--css stylesheet-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap CSS -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    </head>
+    <body>
+        <div class="containter">
+            <h3>Calculator App</h3>
+        </div>
+
+        <form id="form" action='#' >
+            <p>Number 1 <input type = "number" name = "number1" placeholder = "Enter Number 1"/></p>
+            <p>Number 2 <input type = "number" name = "number2" placeholder = "Enter Number 2"/></p>
+        
+        </form>
+        
+        <button onclick="display()">Calculate </button>
+
+        <h4>Output:</h4>
+        <p id="output"></p>
+        <script>
+            function display() {
+                var form_elements = document.forms['form'];
+                var x = parseInt(form_elements[0].value);
+                var y = parseInt(form_elements[1].value);
+                var sum = x + y;
+                document.getElementById("output").innerHTML = sum;
+            }
+        </script>
+    </body>
+</html>
