@@ -1,1 +1,1 @@
-web: gunicorn app:app --log-file -
+web: gunicorn chihuahua2.wsgi --log-file -
