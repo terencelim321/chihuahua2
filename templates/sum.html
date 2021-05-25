@@ -15,20 +15,25 @@
 
     </head>
     <body>
-        <div class="containter">
+        <div class="container">
             <h3>Calculator App</h3>
         </div>
 
-        <form id="form" action='#' >
-            <p>Number 1 <input type = "number" name = "number1" placeholder = "Enter Number 1"/></p>
-            <p>Number 2 <input type = "number" name = "number2" placeholder = "Enter Number 2"/></p>
+        <div class = "container">
+            <form id="form" action='#' >
+                <p>Number 1 <input type = "number" name = "number1" placeholder = "Enter Number 1"/></p>
+                <p>Number 2 <input type = "number" name = "number2" placeholder = "Enter Number 2"/></p>
+            
+            </form>
+            
+            <button type="button" class="btn btn-primary" onclick="display()">Calculate </button>
+        </div>
+       
+        <div class="container">
+            <h4><strong>Output:</strong></h4><span><p id="output"></p></span>
+            
+        </div>
         
-        </form>
-        
-        <button onclick="display()">Calculate </button>
-
-        <h4>Output:</h4>
-        <p id="output"></p>
         <script>
             function display() {
                 var form_elements = document.forms['form'];
