@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 #start app route which is /
 @app.route("/")
-#test html
+#takes json info from php file
 def main():
         with open("app.php","rb") as f:
             jsonData = json.loads(f.read())
