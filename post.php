@@ -1,12 +1,12 @@
 <?php
-if(isset($_POST["submit"]))
-{
-    $num1 = $_POST['number1'];
-    $num2 = $_POST['number2'];
-}
+#if(isset($_POST["submit"]))
+#{
+    #$num1 = $_POST['number1'];
+    #$num2 = $_POST['number2'];
+#}#
 $numbers = array(
-                    'number1' => $num1,
-                    'number2' => $num2
+                    'number1' => 1,
+                    'number2' => 2
 
 );
 #$str = http_build_query($numbers);
