@@ -5,7 +5,7 @@ from flask import Flask, render_template, request, json, jsonify
 app = Flask(__name__)
 
 #start app route which is /
-@app.route("/")
+@app.route("/sum")
 #takes json info from php file
 def main():
         with open("app.php","rb") as f:
